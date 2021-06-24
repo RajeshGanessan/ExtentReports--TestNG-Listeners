@@ -45,7 +45,7 @@ public class LoginTest  extends baseClass {
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 		
-		driver.get("http://inedgetest.heptagon.tech");	
+		driver.get("");	
 	}
 	
 	@Test(priority=1)
@@ -54,15 +54,15 @@ public class LoginTest  extends baseClass {
 		extent.createTest("Login");
 		String title = driver.getTitle();
 		System.out.println(title);                           
-		Assert.assertEquals(title, "InEDGE - Sign In");
+		Assert.assertEquals(title, "");
 	test.log(Status.PASS, "title verified");
 	}
 //	
 //	@Test(priority=2
 //	public void logging_In() {
 //		
-//		String Email = "jack@mailinator.com";
-//		String password = "Admin@123";
+//		String Email = "";
+//		String password = "";
 //		
 //		driver.findElement(By.id("email")).sendKeys(Email);
 //		test1.get().info("Entered Email as " + Email);
