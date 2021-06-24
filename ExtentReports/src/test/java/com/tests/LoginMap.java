@@ -33,12 +33,12 @@ public class LoginMap {
 		
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.get("http://inedgetest.heptagon.tech");
+		driver.get("");
 		
 		HashMap<String,LoginMap> loginCredentials = new HashMap<String,LoginMap>();
 		
-		LoginMap Test_Env = new LoginMap("http://inedgetest.heptagon.tech","Rajesh.g@heptagon.in","Admin@123");
-		LoginMap Stage_Env = new LoginMap("http://ikya.heptagon.tech", "rinash.a@heptagon.in", "Admin@123");
+		LoginMap Test_Env = new LoginMap("");
+		LoginMap Stage_Env = new LoginMap("");
 		
 		//Adding details to map
 		loginCredentials.put("TestEnv", Test_Env);
@@ -59,8 +59,8 @@ public class LoginMap {
 //		
 //		HashMap<String,LoginMap> loginCredentials = new HashMap<String,LoginMap>();
 //		
-//		LoginMap Test_Env = new LoginMap("http://inedgetest.heptagon.tech","Rajesh.g@heptagon.in","Admin@123");
-//		LoginMap Stage_Env = new LoginMap("http://ikya.heptagon.tech", "rinash.a@heptagon.in", "Admin@123");
+//		LoginMap Test_Env = new LoginMap("");
+//		LoginMap Stage_Env = new LoginMap("");
 //		
 //		//Adding details to map
 //		loginData().put("Test", Test_Env);
