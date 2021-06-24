@@ -28,7 +28,7 @@ public class HashMapSelenium {
 		
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.get("http://inedgetest.heptagon.tech");
+		driver.get("");
 		
 	}
 	
@@ -51,8 +51,8 @@ public class HashMapSelenium {
 		
 		HashMap<String, String> loginCredentials = new HashMap<String,String>();
 		
-		loginCredentials.put("Test", "jack@mailinator.com:Admin@123");
-		loginCredentials.put("Stage", "arulraj.jothiraj@heptagon.in:Admin@123");
+		loginCredentials.put("");
+		loginCredentials.put("");
 		
 		
 		
